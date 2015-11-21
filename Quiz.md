@@ -11,7 +11,7 @@
 
 
 ##Q2.
-   雙引號內的字串加上 #{} 是可以用來計算的，也就是擁有計算的功能。  
+    雙引號內的字串加上 #{} 是可以用來計算的，也就是擁有計算的功能。  
 
     沒有引號內的字串，則不會有計算的功能，是直接將結果所表現出來。  
 
@@ -41,18 +41,18 @@
 ##Q4.
 
 ##Q5.
-''
-computer_input = rand (1..3)
-''
+　̀'
+        computer_input = rand (1..3)
+　̀'　
     
-''
+　̀'
          num=[1,2,3,4,5]  
 
          num.sort_by  {rand}  
-''
+　̀'
 
 ##Q6.
-'
+　̀'
 puts "please enter the first number:"
 
 num1 = gets.chomp.to_i
@@ -60,13 +60,13 @@ num1 = gets.chomp.to_i
 puts "please enter the second number:"
 
 num2 = gets.chomp.to_i
-'
+　̀'
 
 改成method 並有效防止只用者亂輸入值
 
 ##Q7.
 
-    　̀'((1 > 3) && (true == true)) || (!!! false)'
+    　̀'((1 > 3) && (true == true)) || (!!! false)　̀'
     - (1大於3)且 (true為true) ,判斷結果為 false
      (!!!false) , false為不0值的反值,結果為true
      false || true , false或true, 在可選擇時,只會判斷true 
@@ -78,18 +78,19 @@ num2 = gets.chomp.to_i
 
 ##Q9.
 
-''  
-    case operation  
-      when var >= 5 then puts "var is greather than or equal to 5"  
-      when var <5 then puts "var is less than 5"  
-    end  
-''  
+　̀'
+        case operation  
+          when var >= 5 then puts "var is greather than or equal to 5"  
+          when var <5 then puts "var is less than 5"  
+        end  
+　̀'
 
-''  
-def (var)  
-  if operation >= 5  
-    var is greather than or equal to 5  
-  else  
-    var is less than 5  
-  end  
-''  
+　̀'
+    def (var)  
+      if operation >= 5  
+        var is greather than or equal to 5  
+      else  
+        var is less than 5  
+      end 
+    end 
+　̀'
