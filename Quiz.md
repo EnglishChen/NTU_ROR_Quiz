@@ -11,7 +11,9 @@
 
 
 ##Q2.
+   雙引號內的字串加上 #{} 是可以用來計算的，也就是擁有計算的功能。  
 
+    沒有引號內的字串，則不會有計算的功能，是直接將結果所表現出來。  
 
 ##Q3.
 
@@ -39,9 +41,15 @@
 ##Q4.
 
 ##Q5.
+''
+computer_input = rand (1..3)
+''
+    
+''
+         num=[1,2,3,4,5]  
 
-    - 'computer_input = rand (1..3)'
-    -
+         num.sort_by  {rand}  
+''
 
 ##Q6.
 '
@@ -70,18 +78,18 @@ num2 = gets.chomp.to_i
 
 ##Q9.
 
-'
-    case operation
-      when var >= 5 then puts "var is greather than or equal to 5"
-      when var <5 then puts "var is less than 5"
-    end
-'
+''  
+    case operation  
+      when var >= 5 then puts "var is greather than or equal to 5"  
+      when var <5 then puts "var is less than 5"  
+    end  
+''  
 
-'
-def (var)
-  if operation >= 5
-    var is greather than or equal to 5
-  else
-    var is less than 5
-  end
-'
+''  
+def (var)  
+  if operation >= 5  
+    var is greather than or equal to 5  
+  else  
+    var is less than 5  
+  end  
+''  
