@@ -12,7 +12,7 @@ float = 浮點數, 非整數, 可含有小數點
 
 
 ##Q2.
-雙引號內的字串加上 #{} 是可以用來計算的，也就是擁有計算的功能。  
+雙引號內的字串加上 #{ } 是可以用來計算的，也就是擁有計算的功能。  
 
 沒有引號內的字串，則不會有計算的功能，是直接將結果所表現出來。  
 
@@ -41,22 +41,24 @@ Hash = 陣列 (Key value)
 ##Q4.
 
 ##Q5.
-
+```ruby
         computer_input = rand (1..3)
+```
 
-***
-         num=[1,2,3,4,5]  
-
-         num.sort_by  {rand}  
-
+```ruby
+          [1,2,3].shuffle!  
+          or
+          [1,2,3].shuffle!.last
+```
 
 ##Q6.
 
 
 
 ##Q7.
-
+```ruby
     　((1 > 3) && (true == true)) || (!!! false)
+```
 (1大於3)且 (true為true) ,判斷結果為 false
 (!!!false) , false為不0值的反值,結果為true
 false || true , false或true, 在可選擇時,只會判斷true 
@@ -67,15 +69,25 @@ false || true , false或true, 在可選擇時,只會判斷true
 加在code的中間, 可在執行code時回傳其結果是否有問題，當成debug的小工具
 
 ##Q9.
+```ruby
+    var = 5
 
-
+    if var >= 5
+      return "var is greater than or equal to 5"
+    else
+      return "var is less than 5"
+    end
+```
+```ruby
+    var >=5 ? "Vvar is greather than or equal to 5 " : " var is less than 5"?
+```
+```ruby
         case operation  
           when var >= 5 then puts "var is greather than or equal to 5"  
           when var <5 then puts "var is less than 5"  
         end  
-
-***
-
+```
+```ruby
     def (var)  
       if operation >= 5  
         var is greather than or equal to 5  
@@ -83,3 +95,4 @@ false || true , false或true, 在可選擇時,只會判斷true
         var is less than 5  
       end 
     end 
+```
