@@ -13,8 +13,8 @@ a = 1              # 將1宣告在a這個變數中
 @a = 2             # 將物件變數2 儲存於實例變數a當中
 @@a = 5            # 將5宣告在a這個class_variable內
 user = User.new    # 創造一個新的物件user,將User這個class的內容儲存在內
-user.name          # output出user這個class在name這個instance_method的結果
-user.name = "Joe"  # ~~想想看在回答~~
+user.name          # output出user這個class在name這個instance_method的結果 = get_method
+user.name = "Joe"  # 把user.name用一個字串設定在內 = set_method
 ```
 
 ***
@@ -22,7 +22,7 @@ user.name = "Joe"  # ~~想想看在回答~~
 
   就像是一種工具箱，本身不是class，但定義方法確和class相似，且不可以放到class裡面，要放在外面。
 ```ruby
-  module business
+  module Business
     def rate
       puts "Accountant"
     end
@@ -31,6 +31,7 @@ user.name = "Joe"  # ~~想想看在回答~~
   class Person
     attr_accessor :name, :department
 
+	include Business                # 直接使用Business的module於Person內
     def initialize(name,department)
       @name = name
       @department = department
@@ -46,7 +47,7 @@ user.name = "Joe"  # ~~想想看在回答~~
 ```
 ***
 ## Q3.請說明 class 和 instance variable 之間的差別
-  - class: 為物件導向的一個模板，主要是將類別模組化後，再將內容重新設計，以利其他程式或專案可重複使用此類別的方法獲內容物。
+  - class: 為物件導向的一個模板，主要是將類別模組化後，再將內容重新設計，以利其他程式或專案可重複使用此類別的方法或內容物。(被模版本身所綁定)
   - instance variable: 將物件變數宣告為實例變數，使資料綁定在物件上，物件沒被銷毀，資料也會完好無恙。並規定此變數只會再這個class內出現，且在物件產生時須自動出現。
 
 ***
@@ -57,12 +58,14 @@ User.new("Bob", "male", "Engineer")
 
 ```ruby
 	class User
-	    def initialize(Bob,male,Engineer)
-	      @Bob = Bob
-	      @male = male
-	      @Engineer = Engineer
+	    def initialize(name, gender,job)
+	      @name = name
+	      @gender = gender
+	      @job = job
 	    end
 	end
+
+	User.new("Bob","male","Engineer")
 ```
 
 ***
@@ -76,7 +79,7 @@ User.new("Bob", "male", "Engineer")
     一開始在class內先做初始設定的宣告，一旦被宣告出來後就不可在做改變
 ```ruby
   class Person
-	attr_accessor :name, :department
+	attr_accessor :name, :department    #可以省掉get_method和set_method的麻煩
 	...
 	...
   end
@@ -107,7 +110,7 @@ User.new("Bob", "male", "Engineer")
 
 	private                            # step 1 write the "private"
 
-	def secret_method                  # step 2 set the sercet method
+	def secret_method                  # step 2 set the sercet method under the "private"
 	  "This is private method"
 	end
 ```
