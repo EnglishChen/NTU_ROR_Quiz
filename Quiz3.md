@@ -2,7 +2,6 @@
 ## Q1.請解釋 database.yml, routes.rb, 和 Gemifle 分別是什麼？ 他們分別在一個 Rails 專案裡的什麼位置？ 他們為什麼對一個 Rails 專案如此重要？
 ---
   - database.yml:這個rails專案的database的設定均在此。
-  				(這個專案是使用)
   - routes.rb:一個設定此rails app URL的設定檔。   
 			  可以看此app的功能。   
 			  路由的定義也在此。   
