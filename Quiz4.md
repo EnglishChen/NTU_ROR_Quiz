@@ -1,4 +1,4 @@
-# Quiz 3 of Ruby On Rails NO.261 
+# Quiz 4 of Ruby On Rails NO.261 
 ## Q1.請說明 rails g scaffold xxx 功能的壞處為何？
 ---
 
@@ -27,39 +27,40 @@ end
 ***
 ## Q6.請列出兩種方法檢查在 routes.rb 裡面設定的路由
 ---
-	- rails routes
-	- 利用browser，進入 info
+  - rails routes
+  - 利用browser，進入 info
 ***
 ## Q7.請列出在一個 rails 專案裡使用 bootstrap 套件的步驟
 ---
-	1.在 Gemfile 內插入 
 ```ruby
+	1.在 Gemfile 內插入 
 	gem 'bootstrap'
 ```
-	2.執行
 ```ruby
+	2.執行
 	bumdle install
 ```
-	3.先查看路徑是否正確(有兩種方法)
 ```ruby
+	3.先查看路徑是否正確(有兩種方法)
+
 	bundle show bootstrap
 	bundle show pry
 ```
 	4.進入 app/views/layouts/application.html.erb
-	5.在 assets/javascripts/application.js 內的第15行左右 加入
 ```ruby
+	5.在 assets/javascripts/application.js 內的第15行左右 加入
 	//= require bootstrap
 ```
+```ruby
 	6.進入assets/stylesheets/application.css 
 	   並更改其儲存格是為scss
 	   再至17行加入
-```ruby
 	@ import "bootstrap";
 ```
 	7.即可在 ;ayouts/application.html.erb 內編輯網頁
 ***
 ## Q8.請說明在 .erb 檔案裡 <%= %> 與 <% %> 這兩種 tag 的差別
 ---
-	- <%= %>: 
-	- <% %>:
+  - <%= %>: 
+  - <% %>:
 ***
