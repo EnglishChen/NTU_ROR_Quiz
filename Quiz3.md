@@ -38,6 +38,8 @@
 ## Q5.請解釋 model 檔案和 migration 檔案的差別
 ---
 	- model:檔案對應到資料庫裡的某個資料表 ( 繼承 ActiveRecord::Base )
+			是model中的m，負責新增與操作需要持久存在資料庫裡的資料，是物件關係映射(Object Relational Mapping,ORM)的描述。
+			(補充: ORM為將應用程式中複雜的物件，對應到關聯式資料庫管理系統中的資料表，可以輕鬆儲存物件，不需SQL的語法) 
 	- migration:記錄資料庫內藍圖的改變(可想像成資料庫欄位的Git) ( 繼承 ActiveRecord::Migration )
 ***
 
