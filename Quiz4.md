@@ -46,7 +46,9 @@ end
 	bundle show bootstrap
 	bundle show pry
 ```
+```ruby
 	4.進入 app/views/layouts/application.html.erb
+```
 ```ruby
 	5.在 assets/javascripts/application.js 內的第15行左右 加入
 	//= require bootstrap
@@ -57,7 +59,9 @@ end
 	   再至17行加入
 	@ import "bootstrap";
 ```
-	7.即可在 ;ayouts/application.html.erb 內編輯網頁
+```ruby
+	7.即可在 layouts/application.html.erb 內編輯網頁
+```
 ***
 ## Q8.請說明在 .erb 檔案裡 <%= %> 與 <% %> 這兩種 tag 的差別
 ---
